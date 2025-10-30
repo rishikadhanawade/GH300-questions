@@ -45,7 +45,7 @@ interface QuizHistory {
 
 // Utilities ----------------------------------------------------------------
 const csvUrl = "/data/questions.csv";
-const APP_TITLE = "GH300 Exam Prep - Rishika's Study Portal";
+const APP_TITLE = "GH300 Exam Prep Study Portal";
 
 const parseCsv = async (): Promise<QuestionRow[]> => {
   const resp = await fetch(csvUrl);
@@ -224,7 +224,7 @@ export default function QuizApp() {
         </CardHeader>
         <CardContent className="text-center space-y-4">
           <p className="text-lg text-muted-foreground">
-            Welcome <span className="font-semibold text-primary">Rishika</span>, to your personalized practice platform for the <span className="font-semibold text-accent">GH300</span> certification.
+            Welcome <span className="font-semibold text-primary"></span> to your personalized practice platform for the <span className="font-semibold text-accent">GH300</span> certification.
           </p>
           <p className="text-sm text-muted-foreground">
             Track your progress and master each topic systematically.
@@ -608,7 +608,7 @@ export default function QuizApp() {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-4">
               <h1 className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                GH300 Exam Prep - Rishika's Portal
+                GH300 Exam Prep - Portal
               </h1>
               {mode !== "home" && (
                 <BadgeWrapper variant="outline">
